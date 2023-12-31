@@ -9,7 +9,6 @@
    -webkit-background-size: cover !important;
    text-align: center;
    overflow: hidden;
-   // margin-bottom: 0;
 
    ::before {
       content: '';
@@ -116,6 +115,7 @@
    }
 
    @media (max-width: 768px) {
+      min-height: 847px;
       margin-top: 56px;
 
       h1 {
@@ -140,6 +140,7 @@
    }
 
    @media (max-width: 480px) {
+      min-height: 847px;
       margin-top: 56px;
 
       h1 {
