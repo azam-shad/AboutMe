@@ -6,6 +6,7 @@ import Header from './pages/header/Header';
 import Resumes from './pages/resume/Resumes';
 import Navbar from './pages/navbar/Navbar';
 import ContactUs from './pages/contact/ContactUs';
+import Footer from './pages/footer/Footer';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           <Route exact path='/resume' element={<Resumes />} />
           <Route exact path='/contacts' element={<ContactUs />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
