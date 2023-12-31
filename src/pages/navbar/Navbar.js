@@ -12,7 +12,6 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import DevicesIcon from '@mui/icons-material/Devices';
 import './navbar.css';
 import logo from '../../Assets/logo.png'
 import image from '../../Assets/shadazam.jpg';
@@ -41,7 +40,7 @@ const Navbar = () => {
     // };
 
     return (
-        <AppBar position="static" sx={{ backgroundColor: '#FAFAFA', boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px ' }}>
+        <AppBar position="fixed" sx={{ backgroundColor: 'black' }}>
             {/* // <AppBar position="static"> */}
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
@@ -137,12 +136,16 @@ const Navbar = () => {
                                     my: 2,
                                     fontSize: 'calc(2px + 2vmin)',
                                     fontWeight: 600,
-                                    color: location.pathname === `/${page.toLowerCase()}` ? '#000020' : '#083f0b',
-                                    backgroundColor: location.pathname === `/${page.toLowerCase()}` ? '#2CBC63' : 'inherit',
+                                    color: location.pathname === `/${page.toLowerCase()}` ? 'white' : 'white',
+                                    borderBottom: location.pathname === `/${page.toLowerCase()}` ? '2px solid white' : 'inherit',
+                                    borderColor: location.pathname === `/${page.toLowerCase()}` ? '#97f19c' : 'inherit',
                                     display: 'block',
                                     '&:hover': {
-                                        border: '1px solid black',
-                                        backgroundColor: '#97f19c',
+                                        // color: 'black',
+                                        // border: '2px solid black',
+                                        borderBottom:'2px solid white',
+                                        borderColor: '#97f19c',
+                                        // backgroundColor: '#97f19c',
                                     },
                                 }}
                             >

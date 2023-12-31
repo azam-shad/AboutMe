@@ -1,33 +1,31 @@
 import React from 'react'
-import { Paper, Typography, Button } from '@mui/material'
+// import { Paper, Typography, Button } from '@mui/material'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faTwitter, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { Link } from 'react-router-dom';
 
-import Carousel from 'react-material-ui-carousel'
-import image1 from '../../Assets/bannerImage/1.jpg'
-import image2 from '../../Assets/bannerImage/2.jpg'
-import image3 from '../../Assets/bannerImage/3.jpg'
+// import Carousel from 'react-material-ui-carousel'
+// import image1 from '../../Assets/bannerImage/1.jpg'
+// import image2 from '../../Assets/bannerImage/2.jpg'
+// import image3 from '../../Assets/bannerImage/3.jpg'
 import './header.scss'
 
 const Header = () => {
   return (
-    // <Carousel>
-    //   <Paper >
-    //     <Typography>
-    //       <img alt='image1st' src={image1} className='image' />
-    //     </Typography>
-    //     <Button variant="outlined">Click me please!</Button>
-    //   </Paper>
-    //   <Paper>
-    //     <Typography><img alt='image1st' src={image2} className='image' /></Typography>
-    //     <Button variant="outlined">Click me please!</Button>
-    //   </Paper>
-    //   <Paper>
-    //     <Typography><img alt='image1st' src={image3} className='image' /></Typography>
-    //     <Button variant="outlined">Click me please!</Button>
-    //   </Paper>
-    // </Carousel>
+
     <div className='background-image'>
-      {/* <img className='image' src={image2} alt='image2backgroungd' /> */}
-      <h1>Shad Azam</h1>
+
+      <h1>I'm Shad Azam</h1>
+      <h3><span><a href="https://bazaar247.in/">Software Engineer @ Bazaar 247 Mcommerce Pvt Ltd</a></span>
+      </h3>
+      <hr />
+      <ul className="social">
+        <li><a href="https://www.facebook.com/shad.azam.94" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFacebookF} /></a></li>
+        <li><a href="https://twitter.com/MShad_Azam" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faTwitter} /></a></li>
+        <li><a href="https://github.com/shadazam08" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /></a></li>
+        <li><a href="https://www.linkedin.com/in/shad-azam-ab9107244/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} /></a></li>
+      </ul>
+      <Link to='/about' className='link-style'>About Me</Link>
     </div>
   )
 }
