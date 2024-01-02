@@ -1,4 +1,5 @@
 import React from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Abouts from './pages/about/Abouts';
@@ -21,6 +22,7 @@ const App = () => {
           <Route exact path='/resume' element={<Resumes />} />
           <Route exact path='/contacts' element={<ContactUs />} />
         </Routes>
+        <SpeedInsights />
         <Footer />
       </div>
     </Router>
