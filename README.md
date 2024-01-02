@@ -6,10 +6,6 @@ This My Portfolio Website developed  as part of the `Shad Azam Portfolio`. The P
 
 https://shad-azam.vercel.app/
 
-## Available Scripts
-
-In the project directory, you can run:
-
 ## Technologies Used
 
 The following technologies were used in the development of My Portfolio:
@@ -27,4 +23,4 @@ To set up the project locally, follow these steps:
 3. Open the project in your preferred code editor.
 4. install `npm install`
 5. Start `npm start`
-6. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+6. Open `http://localhost:3000` to view it in your browser.
