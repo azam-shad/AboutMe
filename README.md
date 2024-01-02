@@ -1,4 +1,4 @@
-# meesho-colone
+# My Portfolio
 
 This My Portfolio Website developed  as part of the `Shad Azam Portfolio`. The Portfolio is built using `HTML, SCSS, JavaScript, ReactJs` technologies.
 
