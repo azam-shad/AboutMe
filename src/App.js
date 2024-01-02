@@ -12,6 +12,7 @@ import Footer from './pages/footer/Footer';
 const App = () => {
   return (
     <Router>
+      <SpeedInsights />
       <div className="App">
         <Navbar />
         <Routes>
@@ -22,7 +23,6 @@ const App = () => {
           <Route exact path='/resume' element={<Resumes />} />
           <Route exact path='/contacts' element={<ContactUs />} />
         </Routes>
-        <SpeedInsights />
         <Footer />
       </div>
     </Router>
