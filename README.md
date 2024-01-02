@@ -24,3 +24,6 @@ To set up the project locally, follow these steps:
 4. install `npm install`
 5. Start `npm start`
 6. Open `http://localhost:3000` to view it in your browser.
+
+
+[MIT License](LICENSE)
