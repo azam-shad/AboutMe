@@ -28,7 +28,7 @@ const ContactUs = ({id}) => {
         <div className="rightSide">
           <h4>Email and Skype id</h4>
           <p className="address">
-            <span><a href="tel:+918750665763">Mobile : (+91) 87-5066-5763</a></span><br />
+            <span><a href="tel:+918750665763">Mobile : (+91) 81-3060-3443</a></span><br />
             <span><a href="mailto:azamshad08@gmail.com">Email : azamshad08@gmail.com</a></span><br />
             <span><a href="https://join.skype.com/invite/vQxNMXGssbTq">Skype Name : shadazam08</a></span><br />
           </p>
