@@ -5,7 +5,6 @@ import LinearProgress, { linearProgressClasses } from '@mui/material/LinearProgr
 
 import './resume.scss';
 
-
 const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
   height: 10,
   width: 700,
@@ -22,9 +21,9 @@ const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
 }));
 
 
-const Resumes = () => {
+const Resumes = ({ id }) => {
   return (
-    <section className='work'>
+    <section className='work' id={id}>
       {/* start the Work */}
       <div className='row'>
         <div className='header-col'>
@@ -117,6 +116,7 @@ const Resumes = () => {
       </div>
       <hr />
       {/* End of Eduction */}
+      
       {/* Start of Certifications */}
       <div className='certification'>
         <div className='header-col'>
@@ -142,7 +142,6 @@ const Resumes = () => {
       {/* End of Certifications */}
 
       {/* Start of Skills */}
-
       <div className='skill'>
         <div className='header-col'>
           <div className='itemWork'>
@@ -179,4 +178,3 @@ const Resumes = () => {
 }
 
 export default Resumes
-

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import AppBar from '@mui/material/AppBar';
 import { Link, useLocation } from 'react-router-dom';
 import Box from '@mui/material/Box';
@@ -18,33 +18,57 @@ import image from '../../Assets/shadazam.jpg';
 import { pages } from '../../Assets/data/navbarData';
 
 
-
 const Navbar = () => {
     const [anchorElNav, setAnchorElNav] = useState(null);
+    const [activeLink, setActiveLink] = useState('');
+    const scrollTargetRefs = useRef({});
     const location = useLocation()
-    // const [anchorElUser, setAnchorElUser] = React.useState(null);
 
     const handleOpenNavMenu = (event) => {
         setAnchorElNav(event.currentTarget);
     };
-    // const handleOpenUserMenu = (event) => {
-    //     setAnchorElUser(event.currentTarget);
-    // };
 
     const handleCloseNavMenu = () => {
         setAnchorElNav(null);
     };
 
-    // const handleCloseUserMenu = () => {
-    //     setAnchorElUser(null);
-    // };
+    useEffect(() => {
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.2,
+        };
+
+        const handleIntersect = (entries) => {
+            entries.forEach((entry) => {
+                const { target } = entry;
+                const link = `/${target.id.toLowerCase()}`;
+
+                if (entry.isIntersecting) {
+                    setActiveLink(link);
+                }
+            });
+        };
+
+        const observer = new IntersectionObserver(handleIntersect, observerOptions);
+
+        pages.forEach((page) => {
+            const target = document.getElementById(page.toLowerCase());
+            if (target) {
+                observer.observe(target);
+                scrollTargetRefs.current[`/${page.toLowerCase()}`] = target;
+            }
+        });
+
+        return () => {
+            observer.disconnect();
+        };
+    }, []);
 
     return (
         <AppBar position="fixed" sx={{ backgroundColor: 'black' }}>
-            {/* // <AppBar position="static"> */}
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
-                    {/* <DevicesIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
                     <Typography
                         variant="h6"
                         noWrap
@@ -56,7 +80,6 @@ const Navbar = () => {
                             display: { xs: 'none', md: 'flex' },
                             fontFamily: 'monospace',
                             fontWeight: 800,
-                            // letterSpacing: '.1rem',
                             color: '#083f0b',
                             textDecoration: 'none',
                         }}
@@ -96,16 +119,16 @@ const Navbar = () => {
                             {pages.map((page) => (
                                 <MenuItem
                                     key={page}
-                                    component={Link}  // Change here
+                                    component={Link}
                                     to={`/${page.toLowerCase()}`}
                                     onClick={handleCloseNavMenu}
+
                                 >
                                     <Typography textAlign="center">{page}</Typography>
                                 </MenuItem>
                             ))}
                         </Menu>
                     </Box>
-                    {/* <DevicesIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1, color: '#083f0b' }} /> */}
                     <Typography
                         variant="h5"
                         noWrap
@@ -118,7 +141,6 @@ const Navbar = () => {
                             flexGrow: 1,
                             fontFamily: 'monospace',
                             fontWeight: 700,
-                            // letterSpacing: '.3rem',
                             color: '#083f0b',
                             textDecoration: 'none',
                         }}
@@ -129,23 +151,21 @@ const Navbar = () => {
                         {pages.map((page) => (
                             <Button
                                 key={page}
-                                component={Link}  // Change here
+                                component={Link}
                                 to={`/${page.toLowerCase()}`}
+                                ref={scrollTargetRefs.current[`/${page.toLowerCase()}`]}
                                 onClick={handleCloseNavMenu}
                                 sx={{
                                     my: 2,
                                     fontSize: 'calc(2px + 2vmin)',
                                     fontWeight: 600,
-                                    color: location.pathname === `/${page.toLowerCase()}` ? 'white' : 'white',
-                                    borderBottom: location.pathname === `/${page.toLowerCase()}` ? '2px solid white' : 'inherit',
-                                    borderColor: location.pathname === `/${page.toLowerCase()}` ? '#97f19c' : 'inherit',
+                                    color: activeLink === `/${page.toLowerCase()}` ? 'white' : 'white',
+                                    borderBottom: activeLink === `/${page.toLowerCase()}` ? '2px solid white' : 'inherit',
+                                    borderColor: activeLink === `/${page.toLowerCase()}` ? '#97f19c' : 'inherit',
                                     display: 'block',
                                     '&:hover': {
-                                        // color: 'black',
-                                        // border: '2px solid black',
-                                        borderBottom:'2px solid white',
+                                        borderBottom: '2px solid white',
                                         borderColor: '#97f19c',
-                                        // backgroundColor: '#97f19c',
                                     },
                                 }}
                             >

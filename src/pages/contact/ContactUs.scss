@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     min-height: 623px;
-    margin-top: 72px;
+    margin-top: 0px;
     background: #191919;
     height: 100%;
     width: 100%;
@@ -128,7 +128,7 @@
     }
 
     @media (max-width: 767px) {
-        margin-top: 54px;
+        margin-top: 2px;
         min-height: 847px;
 
         .row {

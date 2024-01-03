@@ -5,9 +5,9 @@ import profilePic from '../../Assets/shadazam.jpg'
 import resume from '../../Assets/resume/Shad_Azam_Resume.pdf';
 import './about.scss';
 
-const Abouts = () => {
+const Abouts = ({ id }) => {
   return (
-    <section className='about'>
+    <section className='about' id={id}>
       <div className='row'>
         <div className="image-column">
           <img className="profile-pic" src={profilePic} alt="" />

@@ -1,9 +1,9 @@
 import React from 'react'
 import './ContactUs.scss';
 
-const ContactUs = () => {
+const ContactUs = ({id}) => {
   return (
-    <section className="contact">
+    <section className="contact" id={id}>
       <div className="row">
         <div className='section-head'>
           <h1 className="get-in-touch"><span>Get In Touch.</span></h1>

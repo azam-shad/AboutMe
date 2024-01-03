@@ -1,4 +1,4 @@
-const pages = ['Home', 'About', 'Resume', 'Contacts'];
+const pages = ['Home', 'About', 'Resume', 'Contact'];
 // const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 

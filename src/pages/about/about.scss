@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 72px;
+    margin-top: 0px;
     text-align: left;
     background: #2B2B2B;
     padding-top: 20px;
@@ -202,7 +202,7 @@
     }
 
     @media (max-width: 767px) {
-        margin-top: 56px;
+        // margin-top: 56px;
     }
 
     @media (min-width: 768px) and (max-width: 991px) {
