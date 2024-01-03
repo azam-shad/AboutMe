@@ -32,7 +32,7 @@ const Abouts = ({ id }) => {
               <p className='address'>
                 <a>Shad Azam</a><br />
                 <a>Bihar, India </a><br />
-                <a href="tel:+918750665763">Mobile: (+91) 87-5066-5763</a><br />
+                <a href="tel:+918750665763">Mobile: (+91) 81-3060-3443</a><br />
                 <a href="mailto:azamshad08@gmail.com">Email: azamshad08@gmail.com</a><br />
               </p>
             </div>
