@@ -18,7 +18,7 @@ const ContactUs = ({id}) => {
             <a>C/O : Md Sayeed Akhtar</a><br />
             <a>Ward 38,</a><br />
             <a>Mohallah : Chakzohra</a><br />
-            <a>Post : Laheria Sarai, India</a><br />
+            <a>Post : Laheria Sarai</a><br />
             <a>Police Station : Laheria Sarai</a><br />
             <a>District : Darbhanga</a><br />
             <a>Bihar-846001, India</a><br />
