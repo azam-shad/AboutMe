@@ -18,6 +18,7 @@ const App = () => {
             <Route exact path='/home' element={<AllComo id='home' />} />
             <Route exact path='/about' element={<AllComo id='about' />} />
             <Route exact path='/resume' element={<AllComo id='resume' />} />
+            <Route exact path='/projects' element={<AllComo id='projects' />} />
             <Route exact path='/contact' element={<AllComo id='contact' />} />
           </Routes>
           <Footer />

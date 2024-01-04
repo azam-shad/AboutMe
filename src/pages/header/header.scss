@@ -4,7 +4,12 @@
    margin-top: 72px;
    min-height: 500px;
    width: 100%;
-   background: #161415 url('../../Assets/bannerImage/header-background.jpg') no-repeat top center;
+   background: rgb(102, 53, 38);
+   background: -moz-linear-gradient(180deg, rgba(102, 53, 38, 1) 0%, rgba(30, 28, 29, 1) 100%);
+   background: -webkit-linear-gradient(180deg, rgba(102, 53, 38, 1) 0%, rgba(30, 28, 29, 1) 100%);
+   background: linear-gradient(180deg, rgba(102, 53, 38, 1) 0%, rgba(30, 28, 29, 1) 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#663526", endColorstr="#1e1c1d", GradientType=1);
+   // background: #161415 url('../../Assets/bannerImage/header-background.jpg') no-repeat top center;
    background-size: cover !important;
    -webkit-background-size: cover !important;
    text-align: center;
@@ -28,7 +33,7 @@
       text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
 
       &:hover {
-         color: #97f19c;
+         color: #1af526;
          // color: #083f0b;
       }
    }
@@ -71,29 +76,9 @@
             color: #fff;
 
             &:hover {
-               color: #97f19c;
+               color: #1af526;
             }
          }
-      }
-   }
-
-   .link-style {
-      display: inline-block;
-      align-items: center;
-      text-align: center;
-      font-weight: 700;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 15px;
-      margin-top: 40px;
-      height: 50px;
-      background: #444;
-      text-decoration: none;
-      color: #fff;
-
-      &:hover {
-         color: #083f0b;
-         background: #97f19c;
       }
    }
 

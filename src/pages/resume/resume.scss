@@ -1,7 +1,7 @@
 .work {
     display: flex;
     flex-direction: column;
-    background: #effefa;
+    background: #333;
     padding-top: 0px;
     // padding-bottom: 72px;
     overflow: hidden;
@@ -27,15 +27,15 @@
             text-decoration: none;
 
             &:visited {
-                color: #11ABB0;
+                color: #1af526;
             }
 
             &:focus {
-                color: #313131;
+                color: #000;
             }
 
             &:hover {
-                color: #313131;
+                color: #000;
             }
         }
 
@@ -51,7 +51,8 @@
                     font: 30px/40px 'Open Sans', sans-serif;
                     text-transform: uppercase;
                     letter-spacing: 1px;
-                    border-bottom: 3px solid #11ABB0;
+                    color: #fff;
+                    border-bottom: 3px solid #1af526;
                     padding-bottom: 6px;
                 }
             }
@@ -81,20 +82,20 @@
             // padding-right: 10%;
             h2 {
                 font: 30px/40px 'Open Sans', sans-serif;
-                color: #11ABB0;
+                color: #1af526;
                 // font-weight: 700;
             }
 
             h3 {
                 font: 30px/40px 'Open Sans', sans-serif;
-                color: #11ABB0;
+                color: #1af526;
                 margin-bottom: 0px;
             }
 
             p {
                 line-height: 30px;
                 font-family: Avant Garde, Avantgarde, Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-                color: #838C9F;
+                color: #fff;
                 font-size: 18px;
                 text-align: justify;
             }

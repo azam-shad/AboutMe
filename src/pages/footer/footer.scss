@@ -12,14 +12,14 @@
         color: white; // Set the default icon color
 
         &:hover {
-            color: #11ABB0; // Set the color for the hover state
+            color: #1af526; // Set the color for the hover state
         }
     }
 
     hr {
         // width: 50%;
         border: none;
-        background: white;
+        background: #1af526;
         height: 30px;
         width: 3px;
         align-items: center;
@@ -32,7 +32,7 @@
         min-width: 50%;
         background-color: #2F2D2E;
         text-align: center;
-        color: white;
+        color: #1af526;
     }
 
     @media (max-width: 768px) {

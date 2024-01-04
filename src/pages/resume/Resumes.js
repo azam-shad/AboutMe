@@ -16,7 +16,7 @@ const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
   },
   [`& .${linearProgressClasses.bar}`]: {
     borderRadius: 5,
-    backgroundColor: theme.palette.mode === 'light' ? '#1a90ff' : '#308fe8',
+    backgroundColor: theme.palette.mode === 'light' ? '#1af526' : '#308fe8',
   },
 }));
 
@@ -24,6 +24,7 @@ const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
 const Resumes = ({ id }) => {
   return (
     <section className='work' id={id}>
+    {/* <hr /> */}
       {/* start the Work */}
       <div className='row'>
         <div className='header-col'>
@@ -149,23 +150,23 @@ const Resumes = ({ id }) => {
           </div>
         </div>
         <div className='main-col'>
-          <Box sx={{ marginRight: 50 }}>
+          <Box sx={{ marginRight: 50, color:"#fff" }}>
             HTML
             <BorderLinearProgress variant="determinate" value={95} />
           </Box>
-          <Box sx={{ marginRight: 50 }}>
+          <Box sx={{ marginRight: 50, color:"#fff" }}>
             CSS
             <BorderLinearProgress variant="determinate" value={85} />
           </Box>
-          <Box sx={{ marginRight: 50 }}>
+          <Box sx={{ marginRight: 50, color:"#fff" }}>
             JavaScript
             <BorderLinearProgress variant="determinate" value={80} />
           </Box>
-          <Box sx={{ marginRight: 50 }}>
+          <Box sx={{ marginRight: 50, color:"#fff" }}>
             ReactJs
             <BorderLinearProgress variant="determinate" value={80} />
           </Box>
-          <Box sx={{ marginRight: 50 }}>
+          <Box sx={{ marginRight: 50, color:"#fff" }}>
             MySQL/PostgreSQL
             <BorderLinearProgress variant="determinate" value={40} />
           </Box>

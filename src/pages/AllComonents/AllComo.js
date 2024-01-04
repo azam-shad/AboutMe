@@ -3,12 +3,14 @@ import Abouts from '../about/Abouts'
 import Resumes from '../resume/Resumes'
 import ContactUs from '../contact/ContactUs'
 import Header from '../header/Header';
+import Projects from '../Project/Projects';
 import { useLocation } from 'react-router-dom';
 
 const AllComo = () => {
     const headerRef = useRef(null);
     const aboutRef = useRef(null);
     const resumeRef = useRef(null);
+    const projectsRef = useRef(null);
     const contactRef = useRef(null);
     const location = useLocation();
     useEffect(() => {
@@ -30,6 +32,9 @@ const AllComo = () => {
             case '/resume':
                 scrollToComponent(resumeRef);
                 break;
+            case '/projects':
+                scrollToComponent(projectsRef);
+                break;
             case '/contact':
                 scrollToComponent(contactRef);
                 break;
@@ -47,6 +52,9 @@ const AllComo = () => {
             </div>
             <div ref={resumeRef} id='resume'>
                 <Resumes />
+            </div>
+            <div ref={projectsRef} id='projects'>
+                <Projects />
             </div>
             <div ref={contactRef} id='contact'>
                 <ContactUs />
