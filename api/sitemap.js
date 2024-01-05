@@ -12,8 +12,13 @@ module.exports = async (req, res) => {
             res.status(500).json({ error: 'Internal Server Error' });
         });
         // Start the generation process
-        generator.start();
-        generator.pipe(res);
+        await generator.start();
+        // generator.pipe(res);
+        // Get the sitemap as a string
+        const sitemapXML = generator.toXML();
+        // Set the content type and send the sitemap as the response
+        res.setHeader('Content-Type', 'application/xml');
+        res.status(200).send(sitemapXML);
     } catch (error) {
         console.error('Unexpected error:', error);
         res.status(500).json({ error: 'Internal Server Error' });
