@@ -59,25 +59,19 @@ The following technologies were utilized in building this portfolio:
 To set up the project locally, follow these steps:
 
 1. **Clone the Repository:**
-
    ```bash
    git clone https://github.com/shadazam08/AboutMe
-
-   ```
 
 2. **Navigate to the project directory:**
    ```bash
    cd AboutMe
-   ```
 3. Open in Your Preferred Code Editor.
 4. **Install dependencies:**
    ```bash
    npm install
-   ```
 5. **Start the development server:**
    ```bash
    npm start
-   ```
 6. Open 
     ```bash
     http://localhost:3000
