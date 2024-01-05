@@ -23,7 +23,8 @@ To set up the project locally, follow these steps:
 1. **Clone the repository:**
 
 ```bash
-git clone `https://github.com/shadazam08/AboutMe`
+git clone `https://github.com/shadazam08/AboutMe` ```
+
 2. Navigate to the project directory: `cd AboutMe`
 3. Open the project in your preferred code editor.
 4. Install dependencies: `npm install`
