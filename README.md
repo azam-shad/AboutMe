@@ -85,5 +85,6 @@ To set up the project locally, follow these steps:
 ## License
 
 This project is licensed under the [MIT License](LICENSE). Feel free to use and modify it as needed.
+
 ---------------------------------------------------------------------------------
 Thank you for visiting my portfolio! If you have any questions or feedback, feel free to contact me at [m.n81306034@gmail.com](mailto:m.n81306034@gmail.com). This README provides a clear structure, concise information, and easy-to-follow instructions for users interested in exploring your portfolio or contributing to the project.
