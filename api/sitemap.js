@@ -5,7 +5,7 @@ const parser = require('sitemap-stream-parser');
 module.exports = async (req, res) => {
     try {
         // Specify the URL of your website
-        const websiteUrl = 'https://shad-azam.vercel.app/';
+        const websiteUrl = 'https://shad-azam.vercel.app';
 
         // Fetch the HTML content of your website
         const response = await axios.get(websiteUrl);
