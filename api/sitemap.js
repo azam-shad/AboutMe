@@ -1,21 +1,26 @@
 // const { SitemapGenerator } = require('sitemap-generator');
 // const { createSitemap } = require('sitemap');
 
-const { createReadStream } = require('fs');
-const { createGunzip } = require('zlib');
-const parser = require('sitemap-stream-parser');
+// const { createReadStream } = require('fs');
+// const { createGunzip } = require('zlib');
+// const parser = require('sitemap-stream-parser');
+const axios = require('axios');
+const { parseStringPromise } = require('xml2js');
 
 module.exports = async (req, res) => {
     try {
         // Specify the URL of your sitemap
-        const sitemapUrl = 'https://shad-azam.vercel.app/sitemap.xml'
+        const sitemapUrl = 'https://shad-azam.vercel.app/sitemap.xml';
+
         // Fetch the sitemap content using axios
-        const response = await axios.get(sitemapUrl, { responseType: 'stream' });
-        // Create a readable stream from the sitemap content
-        const stream = response.data.pipe(createGunzip());
-        // Parse the sitemap and concatenate entries
-        let sitemapXML = '';
-        await parser(stream, { entry: (entry) => sitemapXML += entry });
+        const response = await axios.get(sitemapUrl);
+
+        // Parse the XML content using xml2js
+        const xmlData = response.data;
+        const result = await parseStringPromise(xmlData);
+
+        // Convert the parsed object back to XML
+        const sitemapXML = result ? new xml2js.Builder().buildObject(result) : '';
 
         // Set the content type and send the sitemap as the response
         res.setHeader('Content-Type', 'application/xml');
@@ -24,6 +29,26 @@ module.exports = async (req, res) => {
         console.error('Unexpected error:', error);
         res.status(500).json({ error: 'Internal Server Error' });
     }
+
+
+    // try {
+    //     // Specify the URL of your sitemap
+    //     const sitemapUrl = 'https://shad-azam.vercel.app/sitemap.xml'
+    //     // Fetch the sitemap content using axios
+    //     const response = await axios.get(sitemapUrl, { responseType: 'stream' });
+    //     // Create a readable stream from the sitemap content
+    //     const stream = response.data.pipe(createGunzip());
+    //     // Parse the sitemap and concatenate entries
+    //     let sitemapXML = '';
+    //     await parser(stream, { entry: (entry) => sitemapXML += entry });
+
+    //     // Set the content type and send the sitemap as the response
+    //     res.setHeader('Content-Type', 'application/xml');
+    //     res.status(200).send(sitemapXML);
+    // } catch (error) {
+    //     console.error('Unexpected error:', error);
+    //     res.status(500).json({ error: 'Internal Server Error' });
+    // }
 
     // try {
     //     const url = 'https://shad-azam.vercel.app';
