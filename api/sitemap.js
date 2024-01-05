@@ -7,12 +7,16 @@ const parser = require('sitemap-stream-parser');
 
 module.exports = async (req, res) => {
     try {
-        const url = 'https://shad-azam.vercel.app/'
-        // Create a readable stream from the sitemap URL
-        const stream = createReadStream(url).pipe(createGunzip());
+        // Specify the URL of your sitemap
+        const sitemapUrl = 'https://shad-azam.vercel.app/sitemap.xml'
+        // Fetch the sitemap content using axios
+        const response = await axios.get(sitemapUrl, { responseType: 'stream' });
+        // Create a readable stream from the sitemap content
+        const stream = response.data.pipe(createGunzip());
         // Parse the sitemap and concatenate entries
         let sitemapXML = '';
         await parser(stream, { entry: (entry) => sitemapXML += entry });
+
         // Set the content type and send the sitemap as the response
         res.setHeader('Content-Type', 'application/xml');
         res.status(200).send(sitemapXML);
