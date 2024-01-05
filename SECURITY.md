@@ -27,7 +27,7 @@ declined, etc. -->
 
 If you discover a security vulnerability within our project, please follow these steps to responsibly disclose it:
 
-1. **Email:** Send an email to [azamshad08@gmail.com](mailto:security@example.com) with a detailed description of the vulnerability.
+1. **Email:** Send an email to [Shad Azam](mailto:security@example.com) with a detailed description of the vulnerability.
 2. **Avoid Public Disclosure:** Please do not disclose the issue publicly until we have had a chance to review and address it.
 3. **Provide Details:** Include information such as a description, the steps to reproduce, and any proof-of-concept code or screenshots.
 
