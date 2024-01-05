@@ -78,7 +78,10 @@ To set up the project locally, follow these steps:
    ```bash
    npm start
    ```
-6. Open `http://localhost:3000` to view it in your browser.
+6. Open 
+    ```bash
+    http://localhost:3000
+to view it in your browser.
 
 **Note:** Ensure that Node.js and npm are installed on your local machine before running the setup commands.
 
