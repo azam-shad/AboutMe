@@ -44,7 +44,7 @@ Welcome to my portfolio! This website showcases my work and provides information
 
 ## Deployed Project
 
-Check out the live version of my portfolio: `[Shad Azam Portfolio](https://shad-azam.vercel.app/)`
+Check out the live version of my portfolio: [Shad Azam Portfolio](https://shad-azam.vercel.app/)
 
 ## Technologies Used
 
@@ -59,19 +59,25 @@ The following technologies were utilized in building this portfolio:
 To set up the project locally, follow these steps:
 
 1. **Clone the Repository:**
+
    ```bash
    git clone https://github.com/shadazam08/AboutMe
 
-2. **Navigate to the project directory:** 
-    ```bash 
-    cd AboutMe
+   ```
+
+2. **Navigate to the project directory:**
+   ```bash
+   cd AboutMe
+   ```
 3. Open in Your Preferred Code Editor.
-4. **Install dependencies:** 
-    ```bash
-    npm install
-5. **Start the development server:** 
-    ```bash
-    npm start
+4. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+5. **Start the development server:**
+   ```bash
+   npm start
+   ```
 6. Open `http://localhost:3000` to view it in your browser.
 
 **Note:** Ensure that Node.js and npm are installed on your local machine before running the setup commands.
@@ -79,5 +85,5 @@ To set up the project locally, follow these steps:
 ## License
 
 This project is licensed under the [MIT License](LICENSE). Feel free to use and modify it as needed.
-
-Thank you for visiting my portfolio! If you have any questions or feedback, feel free to contact me at `[m.n81306034@gmail.com](mailto:m.n81306034@gmail.com)`. This README provides a clear structure, concise information, and easy-to-follow instructions for users interested in exploring your portfolio or contributing to the project.
+---------------------------------------------------------------------------------
+Thank you for visiting my portfolio! If you have any questions or feedback, feel free to contact me at [m.n81306034@gmail.com](mailto:m.n81306034@gmail.com). This README provides a clear structure, concise information, and easy-to-follow instructions for users interested in exploring your portfolio or contributing to the project.
