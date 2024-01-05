@@ -1,6 +1,6 @@
 const { createSitemap } = require('sitemap');
 
-module.exports = (req, res) => {
+module.exports = async (req, res) => {
     const sitemap = createSitemap({
         hostname: 'https://shad-azam.vercel.app',
         cacheTime: 600000,
