@@ -27,7 +27,7 @@ declined, etc. -->
 
 If you discover a security vulnerability within our project, please follow these steps to responsibly disclose it:
 
-1. **Email:** Send an email to [Shad Azam](mailto:azamshad08@gmail.com) with a detailed description of the vulnerability.
+1. **Email:** Send an email to [Shad Azam](mailto:m.n81306034@gmail.com) with a detailed description of the vulnerability.
 2. **Avoid Public Disclosure:** Please do not disclose the issue publicly until we have had a chance to review and address it.
 3. **Provide Details:** Include information such as a description, the steps to reproduce, and any proof-of-concept code or screenshots.
 
@@ -66,13 +66,13 @@ Developers are expected to adhere to secure coding practices, including but not 
 - Data encryption
 - ...
 
-## Incident Response Plan
+<!-- ## Incident Response Plan
 
-In the event of a security incident, follow our incident response plan outlined in [link-to-incident-response-plan].
+In the event of a security incident, follow our incident response plan outlined in [link-to-incident-response-plan]. -->
 
 ## Dependencies and Third-Party Components
 
-We regularly monitor and update dependencies to address potential vulnerabilities. Follow our [Dependency Update Policy](link-to-dependency-update-policy).
+We regularly monitor and update dependencies to address potential vulnerabilities. Follow our [Dependency Update Policy](dependency-update-policy).
 
 ## Security Testing
 
@@ -88,7 +88,7 @@ Team members undergo ongoing security training to stay informed about the latest
 
 ## Compliance and Regulations
 
-We strive to comply with relevant security regulations and standards. See our [Compliance Statement](link-to-compliance-statement).
+We strive to comply with relevant security regulations and standards. See our [Compliance Statement](compliance-statement).
 
 ## Review and Revision
 

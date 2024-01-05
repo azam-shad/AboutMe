@@ -1,4 +1,4 @@
-# Project Name Code of Conduct
+# AboutMe Code of Conduct
 
 ## Introduction
 
@@ -33,7 +33,7 @@ The following behaviors are considered unacceptable and will not be tolerated:
 
 If you witness or experience any behavior that violates this Code of Conduct, please:
 
-1. Contact the project maintainers at [azamshad08@gmail.com](mailto:azamshad08@gmail.com.com).
+1. Contact the project maintainers at [Shad Azam](mailto:m.n81306034@gmail.com).
 2. Provide a detailed description of the incident.
 3. Your report will be kept confidential.
 
@@ -53,4 +53,4 @@ This Code of Conduct is adapted from the Contributor Covenant, version 2.0, avai
 
 ## Questions
 
-If you have any questions about this Code of Conduct, please contact [azamshad08@gmail.com.com](mailto:contact@example.com).
+If you have any questions about this Code of Conduct, please contact [Shad Azam](mailto:m.n81306034@gmail.com).
