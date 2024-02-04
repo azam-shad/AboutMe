@@ -39,9 +39,5 @@ to view it in your browser.
 
 **Note:** Ensure that Node.js and npm are installed on your local machine before running the setup commands.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE). Feel free to use and modify it as needed.
-
 ----------------------------------------
 Thank you for visiting my portfolio! If you have any questions or feedback, feel free to contact me at [m.n81306034@gmail.com](mailto:m.n81306034@gmail.com).
